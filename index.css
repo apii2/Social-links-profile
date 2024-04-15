@@ -1,0 +1,64 @@
+:root{
+  --primary-color: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --inter: "Inter",sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--inter);
+  font-size: 14px;
+  color: var(--white);
+}
+
+html, body{
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--off-black);
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile{
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 1.3rem;
+  background-color: var(--dark-grey);
+
+}
+
+.profile img{
+  width: 60px;
+  height: 60px;
+}
+
+.profile h3{
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.text-green {
+  color: var(--primary-color);
+}
+
+.button-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile button {
+  background-color: var(--grey);
+  padding: 10px 70px;
+  border: none;
+  border-radius: 5px;
+}
