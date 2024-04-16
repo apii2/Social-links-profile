@@ -57,22 +57,25 @@ html, body{
 
 .text-quoted{
   font-weight: 400;
-  margin-bottom: 8px;
+  margin-bottom: 2rem;
 }
 
-.btn-block {
-  display: flex;
-  justify-content: center;
-}
 
-.profile a{
+ul li a{
   text-decoration: none;
 }
 
-.profile button {
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 1rem;
+}
+
+ul li button {
   display: block;
   width: 100%;
-  margin-top: 1rem;
   background-color: var(--grey);
   padding: 14px 90px;
   border: none;
@@ -81,13 +84,13 @@ html, body{
   transition: 200ms ease;
 }
 
-.profile button:hover{
+ul li button:hover{
   background-color: var(--primary-color);
   color: var(--off-black);
   cursor: pointer;
 }
 
-.profile button:active{
+ul li button:active{
   background-color: var(--primary-color);
   color: var(--off-black);
 }
@@ -105,7 +108,7 @@ html, body{
     font-size: 20px;
   }
 
-  .profile button{
+  ul li button{
     padding: 12px 78px;
   }
 }
